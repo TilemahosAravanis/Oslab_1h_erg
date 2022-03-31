@@ -3,5 +3,7 @@
 
 void zing(void){
 
-fprintf(stdout, "Hello from zing2 %s\n", getlogin());
+    const char *usr = getlogin();
+    fprintf(stdout, "Hello from zing2 %s\n", usr);
+
 }
